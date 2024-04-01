@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "ae18a419-b449-4d2b-a37a-313c52641d69",
+		"name": "Juara-Coding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15439900"
+	},
+	"item": [
+		{
+			"name": "Belajar",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "LIST CUSTOMER",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "ADD CUSTOMER",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nomor\" : 2,\r\n    \"nama\" : \"Randy2\",\r\n    \"imgURL\": \"-----2\",\r\n    \"email\": \"rand2y@gmail.com\",\r\n    \"gender\": \"pria\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE CUSTOMER",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/customer/660abf12ed28ada3ff749c6e",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"660abf12ed28ada3ff749c6e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DETAIL CUSTOMER",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/customer/660abf12ed28ada3ff749c6e",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"660abf12ed28ada3ff749c6e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE CUSTOMER",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nomor\" : 3,\r\n    \"nama\" : \"Randy3\",\r\n    \"imgURL\": \"-----3\",\r\n    \"email\": \"rand3y@gmail.com\",\r\n    \"gender\": \"pria\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/customer/660abf97ed28ada3ff749c72",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"customer",
+										"660abf97ed28ada3ff749c72"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
